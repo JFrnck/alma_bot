@@ -1,21 +1,24 @@
-// src/app.module.ts
 import { Module } from '@nestjs/common';
-import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';             // 👈
 import { TelegrafModule } from 'nestjs-telegraf';
-import { BotUpdate } from './bot.update';
-import { VoiceService } from './voice.service';
-
+import { LessonsService } from './services/lessons.service';
+import { SessionService } from './services/session.service';
+import { LearnUpdate } from './updates/learn.update';
+import { TutorUpdate } from './updates/tutor.update';
+import { VoiceUpdate } from './updates/voice.update';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
-    TelegrafModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (config: ConfigService) => ({
-        token: config.get<string>('TELEGRAM_BOT_TOKEN')!,
-      }),
-    }),
+    // Carga .env y lo expone en process.env y ConfigService
+    ConfigModule.forRoot({ isGlobal: true }),              // 👈
+
+    TelegrafModule.forRoot({
+      token: process.env.TELEGRAM_BOT_TOKEN!,
+      include: []
+    })
   ],
-  providers: [BotUpdate, VoiceService],
+  controllers: [AppController],
+  providers: [LessonsService, SessionService, LearnUpdate, TutorUpdate, VoiceUpdate]
 })
 export class AppModule {}

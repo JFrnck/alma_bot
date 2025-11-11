@@ -1,0 +1,122 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "slug": "racionales-q",
+      "title": "🚀 Lección 1: ¡Conoce a la familia Q!",
+      "theory": [
+        "¡Hola! Hoy conocerás a los Números Racionales (Q).",
+        "🧠 Son todos los números que puedes escribir como una fracción.",
+        "Incluye a: enteros (ej: 5 = 5/1), fracciones (1/2), decimales (0.5 = 1/2).",
+        "Forma general: a/b con b ≠ 0 (no se puede dividir entre 0).",
+        "Ejemplos: 7 = 7/1; 3/4 ya es racional; -0.5 = -1/2."
+      ],
+      "exercises": [
+        {
+          "id": 1,
+          "difficulty": "Fácil",
+          "question": "¿Cuál de estos es un número racional?",
+          "options": ["a) 5/8", "b) π", "c) ∞"],
+          "correctIndex": 0,
+          "tutorHint": "Recuerda: racional ↔ se puede escribir como fracción a/b."
+        },
+        {
+          "id": 2,
+          "difficulty": "Medio",
+          "question": "El número entero 10. ¿Es también un número racional?",
+          "options": [
+            "a) No, solo es entero.",
+            "b) Sí, porque se puede escribir como 10/1.",
+            "c) Solo si fuera negativo."
+          ],
+          "correctIndex": 1,
+          "tutorHint": "Todo entero n es n/1 → racional."
+        },
+        {
+          "id": 3,
+          "difficulty": "Difícil",
+          "question": "Según la definición a/b, ¿cuál es la regla MÁS importante para b?",
+          "options": [
+            "a) b tiene que ser más grande que a.",
+            "b) b no puede ser cero.",
+            "c) b tiene que ser un número par."
+          ],
+          "correctIndex": 1,
+          "tutorHint": "La división entre 0 no está definida."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "fraccion-a-decimal",
+      "title": "➡️ Lección 2: ¡De Fracción a Decimal!",
+      "theory": [
+        "Una fracción es una división pendiente: numerador ÷ denominador.",
+        "1/2 → 1 ÷ 2 = 0.5 (Decimal exacto)",
+        "1/3 → 1 ÷ 3 = 0.333... (Decimal periódico puro)",
+        "5/4 → 5 ÷ 4 = 1.25 (Exacto)"
+      ],
+      "exercises": [
+        {
+          "id": 1,
+          "difficulty": "Fácil",
+          "question": "¿Cuál es el decimal de 1/4?",
+          "options": ["a) 0.25", "b) 4.0", "c) 0.14"],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "difficulty": "Medio",
+          "question": "Al convertir 2/3, ¿qué tipo de decimal obtienes?",
+          "options": [
+            "a) Exacto (como 0.5)",
+            "b) Periódico (como 0.666...)",
+            "c) Entero"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "difficulty": "Difícil",
+          "question": "¿Qué decimal representa 7/2?",
+          "options": ["a) 2.7", "b) 3.5", "c) 0.28"],
+          "correctIndex": 1
+        }
+      ],
+      "quickTest": [
+        {
+          "id": 1,
+          "question": "¿Cuál SÍ es una característica de los racionales?",
+          "options": [
+            "a) Nunca se pueden escribir como fracción.",
+            "b) Incluye enteros, fracciones y decimales que terminan o se repiten.",
+            "c) Nunca terminan ni se repiten (como π)."
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 2,
+          "question": "Convierte 3/5 a decimal.",
+          "options": ["a) 0.35", "b) 1.66...", "c) 0.6"],
+          "correctIndex": 2
+        },
+        {
+          "id": 3,
+          "question": "¿Qué decimal representa 1/9?",
+          "options": ["a) 0.1", "b) 0.111...", "c) 0.9"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "question": "¿Por qué −4 pertenece a Q?",
+          "options": [
+            "a) Por ser negativo.",
+            "b) Porque no es decimal.",
+            "c) Porque −4 = −4/1."
+          ],
+          "correctIndex": 2
+        }
+      ]
+    }
+  ]
+}
