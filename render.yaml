@@ -4,15 +4,15 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm run start:prod
     runtime: node
     autoDeploy: true
+
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+
     envVars:
       - key: NODE_ENV
         value: production
-
-      # Aquí van tus variables .env (Render te pedirá que las llenes)
       - key: TELEGRAM_BOT_TOKEN
         sync: false
       - key: OPENAI_API_KEY
