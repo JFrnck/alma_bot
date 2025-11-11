@@ -8,7 +8,7 @@ import { TutorUpdate } from './updates/tutor.update';
 import { VoiceUpdate } from './updates/voice.update';
 import { AppController } from './app.controller';
 
-const TELEGRAM_TOKEN = "8590046011:AAEgCL05S3i23Y3sjwgQQDDKAWRN76TVS6g" 
+
 
 @Module({
   imports: [
@@ -16,7 +16,7 @@ const TELEGRAM_TOKEN = "8590046011:AAEgCL05S3i23Y3sjwgQQDDKAWRN76TVS6g"
     ConfigModule.forRoot({ isGlobal: true }),              // 👈
 
     TelegrafModule.forRoot({
-      token: process.TELEGRAM_TOKEN!,
+      token: process.env.TELEGRAM_BOT_TOKEN!,
       include: []
     })
   ],
