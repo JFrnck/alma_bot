@@ -1,4 +1,14 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": false,
+    "types": ["node"],            // <-- clave
+    "moduleResolution": "node",
+    "target": "ES2021",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*.spec.ts"]
 }
